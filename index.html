@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>디지털 마케팅 진단</title>
+<title>디지털 마케팅 현황 진단</title>
 <style>
 :root{
   --ink:#12283F; --ink-2:#4A5C6E; --ink-3:#8494A2;
@@ -144,13 +144,13 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
 <!-- 0 기본 -->
 <section class="step on" data-step="0">
   <p class="axis">시작</p>
-  <h2>어느 사업장을 진단하십니까</h2>
-  <p class="lead">사장님과 마주 앉아 함께 채우십시오. 8분이면 끝납니다.</p>
-  <div class="q"><p>상호</p><input type="text" id="f_name" placeholder="예: 한빛노무사사무소" autocomplete="off"></div>
-  <div class="q"><p>하시는 일<span class="hint">들으신 그대로 적으십시오</span></p><input type="text" id="f_biz" placeholder="예: 노무 상담과 사건 대리" autocomplete="off"></div>
+  <h2>디지털 마케팅 체계 구축을 위한 진단을 시작합니다.</h2>
+  <p class="lead">진단하는 컨설턴트와 함께 의논하시면서 답해 주세요.</p>
+  <div class="q"><p>업체(상호)명</p><input type="text" id="f_name" placeholder="예: 한빛노무사사무소" autocomplete="off"></div>
+  <div class="q"><p>주로 하시는 일<span class="hint">생각나는 것을 편하게 그대로 적으십시오</span></p><input type="text" id="f_biz" placeholder="예: 노무 상담과 사건 대리" autocomplete="off"></div>
   <div class="q"><p>진단일</p><input type="text" id="f_date" autocomplete="off"></div>
-  <div class="q" data-k="track"><p>사업 규모와 성격이 어떻게 됩니까<span class="hint">이 답에 따라 이어지는 문항이 달라집니다</span></p><div class="opts">
-    <button class="opt" data-v="small" data-sub="solo">혼자, 또는 가족이 꾸립니다<small>매장, 공방, 1인 사무소</small></button>
+  <div class="q" data-k="track"><p>사업의 규모와 성격은 어떻게 됩니까?<span class="hint">이 답에 따라 이어지는 문항이 달라집니다</span></p><div class="opts">
+    <button class="opt" data-v="small" data-sub="solo">혼자, 또는 가족이 운영합니다<small>매장, 공방, 1인 사무소</small></button>
     <button class="opt" data-v="small" data-sub="shop">직원 몇 명을 둔 매장이나 사무소입니다<small>손님이 직접 찾아오는 곳</small></button>
     <button class="opt" data-v="sme" data-sub="maker">제조하거나 가공해서 납품합니다<small>부품, 완제품, 식품, 기계</small></button>
     <button class="opt" data-v="sme" data-sub="b2b">기업이나 기관을 상대로 거래합니다<small>유통, 도매, 시공, 기업 서비스</small></button>
@@ -162,7 +162,7 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
   <p class="axis">축 1</p>
   <h2>업종</h2>
   <p class="lead">가장 가까운 것 하나만 고르십시오. 이 답으로 규제와 플랫폼까지 함께 판정합니다.</p>
-  <div class="q" data-k="ind"><p>어떤 업종에 가장 가깝습니까</p><div class="opts grid grid3">
+  <div class="q" data-k="ind"><p>어떤 업종에 가장 가깝습니까?</p><div class="opts grid grid3">
     <button class="opt" data-v="food">음식점·카페</button>
     <button class="opt" data-v="beauty">미용·네일·피부</button>
     <button class="opt" data-v="academy">학원·교습</button>
@@ -193,38 +193,39 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
 <section class="step" data-track="small" data-step="2">
   <p class="axis">축 2</p>
   <h2>손님이 오는 경로</h2>
-  <p class="lead">어떤 채널을 먼저 열지 결정하는 축입니다.</p>
-  <div class="q" data-k="path"><p>손님이 우리를 어떻게 알고 옵니까</p><div class="opts">
+  <p class="lead">어떤 채널을 먼저 열지 결정하기 위한 질문입니다.</p>
+  <div class="q" data-k="path"><p>손님이 귀사를 어떻게 알고 옵니까?</p><div class="opts">
+  <p class="lead">가장 많은 비중을 차지하는 것을 하나만 선택하시면 됩니다.</p>
     <button class="opt" data-v="local">근처를 지나다가, 또는 지도에서 찾아서</button>
     <button class="opt" data-v="search">인터넷에서 찾아보고 여러 곳을 비교해서</button>
     <button class="opt" data-v="product">온라인에서 물건을 보고</button>
     <button class="opt" data-v="platform">배달앱이나 중개 플랫폼을 통해</button>
     <button class="opt" data-v="referral">아는 사람 소개나 기존 거래처를 통해</button>
   </div></div>
-  <div class="q" data-k="area"><p>손님은 주로 어디에서 옵니까<span class="hint">매출의 대부분이 어디에서 나오는지를 기준으로 삼습니다</span></p><div class="opts">
-    <button class="opt" data-v="walk">걸어서 올 수 있는 거리</button>
-    <button class="opt" data-v="city">우리 시군구 안</button>
-    <button class="opt" data-v="region">인근 시도까지</button>
-    <button class="opt" data-v="nation">전국</button>
+  <div class="q" data-k="area"><p>손님은 주로 어디에서 옵니까?<span class="hint">매출비중이 가장 높은 유형을 기준으로 삼습니다</span></p><div class="opts">
+    <button class="opt" data-v="walk">걸어서 올 수 있는 가까운 거리에서</button>
+    <button class="opt" data-v="city">차로 30분 이내의 생활권 거리에서</button>
+    <button class="opt" data-v="region">생활권을 벗어난 타지역(시/군)에서</button>
+    <button class="opt" data-v="nation">전국에서</button>
   </div></div>
-  <div class="q" data-k="speed"><p>손님이 알아보고 결정하기까지 얼마나 걸립니까</p><div class="opts">
-    <button class="opt" data-v="now">그 자리에서 바로</button>
-    <button class="opt" data-v="days">며칠 비교해 보고</button>
-    <button class="opt" data-v="weeks">몇 주 이상 따져 보고</button>
+  <div class="q" data-k="speed"><p>손님이 알아보고 구매를 결정하기까지 얼마나 걸립니까?</p><div class="opts">
+    <button class="opt" data-v="now">방문하는 즉시 바로</button>
+    <button class="opt" data-v="days">대부분 며칠을 비교해 보고</button>
+    <button class="opt" data-v="weeks">한 두달 이상 이것 저것 상세히 따져 보고</button>
   </div></div>
-  <div class="q" data-k="repeat"><p>한 번 온 손님이 다시 옵니까</p><div class="opts">
-    <button class="opt" data-v="once">거의 한 번으로 끝납니다</button>
-    <button class="opt" data-v="rare">몇 달이나 몇 해 만에 가끔</button>
-    <button class="opt" data-v="often">자주 다시 옵니다</button>
+  <div class="q" data-k="repeat"><p>어떤 구매유형의 손님이 가장 많습니까?</p><div class="opts">
+    <button class="opt" data-v="once">거의 한 번으로 끝나는 손님</button>
+    <button class="opt" data-v="rare">몇 달이나 몇 해 만에 오는 소님</button>
+    <button class="opt" data-v="often">자주 오는 손님 </button>
   </div></div>
-  <div class="q" data-k="visit"><p>거래는 어떤 방식으로 이루어집니까</p><div class="opts">
-    <button class="opt" data-v="walkin">매장에 직접 오셔야 합니다</button>
-    <button class="opt" data-v="booking">예약하고 오십니다</button>
-    <button class="opt" data-v="visitout">저희가 찾아갑니다</button>
+  <div class="q" data-k="visit"><p>거래는 어떤 방식으로 이루어집니까?</p><div class="opts">
+    <button class="opt" data-v="walkin">매장에 직접 와야만 합니다</button>
+    <button class="opt" data-v="booking">예약이 필요합니다</button>
+    <button class="opt" data-v="visitout">우리가 손님을 찾아갑니다</button>
     <button class="opt" data-v="remote">전화나 온라인으로 처리합니다</button>
-    <button class="opt" data-v="ship">물건을 보내 드립니다</button>
+    <button class="opt" data-v="ship">주문을 받아 물건을 보냅니다</button>
   </div></div>
-  <div class="q" data-k="season"><p>일이 몰리는 시기가 있습니까</p><div class="opts">
+  <div class="q" data-k="season"><p>일이 몰리는 시기가 있습니까?</p><div class="opts">
     <button class="opt" data-v="flat">연중 고른 편입니다</button>
     <button class="opt" data-v="peak">특정 시기에 몰립니다</button>
   </div></div>
@@ -233,8 +234,8 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
 <!-- 3 플랫폼 -->
 <section class="step" data-track="small" data-step="3">
   <p class="axis">축 3</p>
-  <h2>플랫폼 의존도</h2>
-  <p class="lead">플랫폼이 매출을 쥐고 있으면 진단의 목표 자체가 달라집니다.</p>
+  <h2>디지털 플랫폼 의존도</h2>
+  <p class="lead">플랫폼을 통한 매출특성을 파악합니다.</p>
   <div class="q" data-k="platuse" data-multi="1"><p>지금 쓰고 계신 플랫폼을 모두 고르십시오<span class="skip">해당하는 것이 없으면 비워 두십시오</span></p><div class="opts grid grid3">
     <button class="opt" data-v="delivery">배달앱</button>
     <button class="opt" data-v="nvbook">네이버 예약</button>
@@ -246,13 +247,13 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
     <button class="opt" data-v="idus">아이디어스</button>
     <button class="opt" data-v="hairshop">카카오헤어샵</button>
   </div></div>
-  <div class="q" data-k="platdep"><p>플랫폼이 매출에서 차지하는 몫은 어느 정도입니까</p><div class="opts">
+  <div class="q" data-k="platdep"><p>플랫폼이 매출에서 차지하는 몫은 어느 정도입니까?</p><div class="opts">
     <button class="opt" data-v="none">플랫폼을 쓰지 않습니다</button>
     <button class="opt" data-v="low">절반이 안 됩니다</button>
     <button class="opt" data-v="high">절반이 넘습니다</button>
     <button class="opt" data-v="all">거의 전부입니다</button>
   </div></div>
-  <div class="q" data-k="fee"><p>플랫폼 수수료가 부담스럽습니까</p><div class="opts">
+  <div class="q" data-k="fee"><p>현재 지출하는 플랫폼 수수료가 부담됩니까?</p><div class="opts">
     <button class="opt" data-v="na">해당 없습니다</button>
     <button class="opt" data-v="ok">감당할 만합니다</button>
     <button class="opt" data-v="heavy">많이 부담됩니다</button>
@@ -263,35 +264,35 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
 <section class="step" data-track="small" data-step="4">
   <p class="axis">축 4</p>
   <h2>판매 구조</h2>
-  <p class="lead">스마트스토어를 열지 말지가 이 축에서 갈립니다.</p>
-  <div class="q" data-k="sell"><p>온라인으로 파는 것이 있습니까</p><div class="opts">
+  <p class="lead">온라인 스토어 개설 필요성을 확인합니다.</p>
+  <div class="q" data-k="sell"><p>온라인으로 파는 것이 있습니까?</p><div class="opts">
     <button class="opt" data-v="none">없습니다</button>
-    <button class="opt" data-v="smart">스마트스토어를 하고 있습니다</button>
+    <button class="opt" data-v="smart">네이버스토어를 하고 있습니다</button>
     <button class="opt" data-v="market">오픈마켓만 합니다</button>
-    <button class="opt" data-v="own">자체 쇼핑몰이 있습니다</button>
+    <button class="opt" data-v="own">자체 쇼핑몰도 있습니다</button>
   </div></div>
-  <div class="q" data-k="goods"><p>상품으로 만들 수 있는 것은 어떤 성격입니까</p><div class="opts">
+  <div class="q" data-k="goods"><p>상품으로 만들 수 있는 것은 어떤 성격입니까?</p><div class="opts">
     <button class="opt" data-v="physical">실물 상품<small>포장해서 보낼 수 있는 것</small></button>
     <button class="opt" data-v="voucher">이용권과 수강권<small>예약권, 회수권, 상담권</small></button>
     <button class="opt" data-v="service">사람이 직접 해야 하는 일<small>상품으로 만들기 어렵습니다</small></button>
   </div></div>
-  <div class="q" data-k="fulfil"><p>주문이 늘어도 포장과 배송을 감당하실 수 있습니까</p><div class="opts">
+  <div class="q" data-k="fulfil"><p>주문이 늘어도 포장과 배송을 감당하실 수 있습니까?</p><div class="opts">
     <button class="opt" data-v="ok">감당할 수 있습니다</button>
     <button class="opt" data-v="hard">지금 인력으로는 어렵습니다</button>
     <button class="opt" data-v="na">보낼 물건이 없습니다</button>
   </div></div>
-  <div class="q" data-k="price"><p>한 번 거래할 때 금액은 어느 정도입니까</p><div class="opts">
+  <div class="q" data-k="price"><p>한 번 거래할 때 금액은 어느 정도입니까?</p><div class="opts">
     <button class="opt" data-v="low">3만 원 아래</button>
     <button class="opt" data-v="mid">3만 원에서 50만 원</button>
-    <button class="opt" data-v="high">50만 원 위</button>
+    <button class="opt" data-v="high">50만 원 보다 많습니다</button>
   </div></div>
 </section>
 
 <!-- 5 가진 것 -->
 <section class="step" data-track="small" data-step="5">
   <p class="axis">축 5</p>
-  <h2>보유한 채널과 자산</h2>
-  <p class="lead">없는 것을 만들기보다 방치된 것을 살리는 일이 먼저입니다.</p>
+  <h2>보유 채널과 마케팅 활용가능 자산</h2>
+  <p class="lead">마케팅에 활용할 수 있는 자산의 상황을 파악하기 위함입니다.</p>
   <div class="q" data-k="have" data-multi="1"><p>이미 만들어 두신 것을 모두 고르십시오<span class="skip">해당하는 것이 없으면 비워 두십시오</span></p><div class="opts grid grid3">
     <button class="opt" data-v="place">스마트플레이스</button>
     <button class="opt" data-v="blog">네이버 블로그</button>
@@ -313,57 +314,57 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
     <button class="opt" data-v="danggn">당근 비즈프로필</button>
     <button class="opt" data-v="youtube">유튜브</button>
   </div></div>
-  <div class="q" data-k="review"><p>후기는 어떤 상태입니까</p><div class="opts">
+  <div class="q" data-k="review"><p>후기는 어떤 상태입니까?</p><div class="opts">
     <button class="opt" data-v="good">여러 개 있고 평도 좋습니다</button>
     <button class="opt" data-v="few">몇 개뿐입니다</button>
     <button class="opt" data-v="bad">나쁜 후기가 눈에 띕니다</button>
     <button class="opt" data-v="none">후기가 쌓이는 구조가 아닙니다</button>
   </div></div>
-  <div class="q" data-k="photo"><p>손님에게 내보일 만한 사진이 있습니까</p><div class="opts">
+  <div class="q" data-k="photo"><p>손님에게 내보일 만한 사진이 있습니까?</p><div class="opts">
     <button class="opt" data-v="many">충분히 있습니다</button>
     <button class="opt" data-v="few">몇 장 있습니다</button>
     <button class="opt" data-v="no">없습니다</button>
   </div></div>
-  <div class="q" data-k="brand"><p>상호 표기와 로고가 채널마다 같습니까</p><div class="opts">
+  <div class="q" data-k="brand"><p>상호 표기와 로고(브랜드)가 채널마다 같습니까?</p><div class="opts">
     <button class="opt" data-v="ok">같습니다</button>
     <button class="opt" data-v="mixed">제각각입니다</button>
-    <button class="opt" data-v="no">로고가 없습니다</button>
+    <button class="opt" data-v="no">로고(브랜드)가 없습니다</button>
   </div></div>
 </section>
 
 <!-- 6 여력 -->
 <section class="step" data-track="small" data-step="6">
   <p class="axis">축 6</p>
-  <h2>운영 여력</h2>
-  <p class="lead">마케팅은 만들 때가 아니라 이어 갈 때 멈춥니다. 넉넉하게 잡지 마십시오.</p>
-  <div class="q" data-k="owner"><p>이 일을 누가 맡습니까</p><div class="opts">
-    <button class="opt" data-v="boss">사장님이 직접</button>
-    <button class="opt" data-v="staff">담당 직원이 있습니다</button>
+  <h2>디지털 마케팅 운영 여력</h2>
+  <p class="lead">디지털 마케팅은 지속성이 매우 중요합니다. 과장해서 말씀하지 마십시오.</p>
+  <div class="q" data-k="owner"><p>온라인채널관리는 누가 맡습니까?</p><div class="opts">
+    <button class="opt" data-v="boss">대표(사장)이 직접합니다</button>
+    <button class="opt" data-v="staff">담당 직원이 합니다</button>
     <button class="opt" data-v="family">가족이 도와줍니다</button>
     <button class="opt" data-v="none">아직 정하지 못했습니다</button>
   </div></div>
-  <div class="q" data-k="hours"><p>일주일에 쓸 수 있는 시간은 얼마나 됩니까<span class="hint">지금 실제로 비어 있는 시간을 말씀해 주십시오</span></p><div class="opts">
+  <div class="q" data-k="hours"><p>일주일에 채널 관리에 쓸 수 있는 시간은 얼마나 됩니까?<span class="hint">지금 실제로 비어 있는 시간을 말씀해 주십시오</span></p><div class="opts">
     <button class="opt" data-v="1">1시간도 빠듯합니다</button>
-    <button class="opt" data-v="3">2시간에서 3시간</button>
-    <button class="opt" data-v="6">4시간에서 6시간</button>
-    <button class="opt" data-v="10">7시간 넘게</button>
+    <button class="opt" data-v="3">2시간에서 3시간 정도입니다</button>
+    <button class="opt" data-v="6">4시간에서 6시간 정도입니다</button>
+    <button class="opt" data-v="10">7시간 넘게도 가능합니다</button>
   </div></div>
-  <div class="q" data-k="write"><p>글을 쓰는 일은 어떻습니까</p><div class="opts">
-    <button class="opt" data-v="hard">부담스럽습니다</button>
+  <div class="q" data-k="write"><p>본인이 직접 글을 쓰는 일은 어떻습니까?</p><div class="opts">
+    <button class="opt" data-v="hard">길고 짧고를 떠나 글쓰기가 부담스럽습니다</button>
     <button class="opt" data-v="short">두세 줄이면 씁니다</button>
-    <button class="opt" data-v="long">한 편씩 쓸 수 있습니다</button>
+    <button class="opt" data-v="long">긴 글도 잘 쓸 수 있습니다</button>
   </div></div>
-  <div class="q" data-k="shoot"><p>사진과 영상을 찍는 일은 어떻습니까</p><div class="opts">
+  <div class="q" data-k="shoot"><p>사진과 영상을 찍는 일은 어떻습니까?</p><div class="opts">
     <button class="opt" data-v="ok">휴대폰으로 찍을 수 있습니다</button>
-    <button class="opt" data-v="video">영상까지 찍고 편집합니다</button>
-    <button class="opt" data-v="hard">어렵습니다</button>
+    <button class="opt" data-v="video">동영상까지 찍고 편집할 수 있습니다</button>
+    <button class="opt" data-v="hard">어떤 것도 하기 어렵습니다</button>
   </div></div>
-  <div class="q" data-k="reply"><p>문의가 오면 얼마나 빨리 답하실 수 있습니까</p><div class="opts">
-    <button class="opt" data-v="fast">바로 답합니다</button>
-    <button class="opt" data-v="hours">몇 시간 안에는 답합니다</button>
-    <button class="opt" data-v="slow">하루는 걸립니다</button>
+  <div class="q" data-k="reply"><p>온라인에서 문의가 온다면 얼마나 빨리 답하실 수 있습니까?</p><div class="opts">
+    <button class="opt" data-v="fast">바로 답할 수 있습니다</button>
+    <button class="opt" data-v="hours">몇 시간 안에는 답할 수 있습니다</button>
+    <button class="opt" data-v="slow">하루 이상이 걸립니다</button>
   </div></div>
-  <div class="q" data-k="device"><p>주로 어떤 기기를 쓰십니까</p><div class="opts">
+  <div class="q" data-k="device"><p>주로 어떤 기기를 쓰십니까?</p><div class="opts">
     <button class="opt" data-v="phone">휴대폰만 씁니다</button>
     <button class="opt" data-v="both">컴퓨터도 씁니다</button>
   </div></div>
@@ -372,29 +373,29 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
 <!-- 7 돈 -->
 <section class="step" data-track="small" data-step="7">
   <p class="axis">축 7</p>
-  <h2>예산과 기간</h2>
-  <p class="lead">감당하실 수 있는 선을 넘으면 계획이 아니라 희망이 됩니다.</p>
-  <div class="q" data-k="fixed"><p>매달 감당하실 수 있는 비용은 어느 정도입니까</p><div class="opts">
+  <h2>마케팅 투자 능력과 지속성</h2>
+  <p class="lead">마케팅은 비용투자와 활동의 지속성에 성과가 비례합니다.</p>
+  <div class="q" data-k="fixed"><p>디지털 마케팅에 매달 쓰실 수 있는 비용은 어느 정도입니까?</p><div class="opts">
     <button class="opt" data-v="0">한 푼도 어렵습니다</button>
-    <button class="opt" data-v="3">3만 원까지</button>
-    <button class="opt" data-v="10">10만 원까지</button>
+    <button class="opt" data-v="3">5만 원까지</button>
+    <button class="opt" data-v="10">10만 정도까지</button>
     <button class="opt" data-v="30">30만 원 넘게도 가능합니다</button>
   </div></div>
-  <div class="q" data-k="init"><p>처음 만드는 데 들이실 수 있는 비용은 어느 정도입니까</p><div class="opts">
-    <button class="opt" data-v="0">직접 만들어야 합니다</button>
+  <div class="q" data-k="init"><p>디지털 채널을 구축하는데 사용 가능한 금액은 어느 정도입니까?</p><div class="opts">
+    <button class="opt" data-v="0">전혀 없으며 직접해야야 합니다</button>
     <button class="opt" data-v="50">50만 원까지</button>
     <button class="opt" data-v="200">200만 원까지</button>
     <button class="opt" data-v="500">그 이상도 가능합니다</button>
   </div></div>
-  <div class="q" data-k="ads"><p>유료 광고를 쓰실 생각이 있습니까</p><div class="opts">
+  <div class="q" data-k="ads"><p>유료 광고를 해보실 생각이 있습니까?</p><div class="opts">
     <button class="opt" data-v="no">생각 없습니다</button>
-    <button class="opt" data-v="test">소액으로 시험해 보고 싶습니다</button>
-    <button class="opt" data-v="yes">쓸 생각이 있습니다</button>
+    <button class="opt" data-v="test">소액이라면 시험삼아 보고 싶습니다</button>
+    <button class="opt" data-v="yes">전혀 광고를 생각해 보지 않았습니다</button>
   </div></div>
-  <div class="q" data-k="term"><p>언제까지 성과를 보셔야 합니까</p><div class="opts">
-    <button class="opt" data-v="3">석 달 안에</button>
-    <button class="opt" data-v="6">여섯 달쯤</button>
-    <button class="opt" data-v="12">일 년은 봅니다</button>
+  <div class="q" data-k="term"><p>광고를 하신다면 효과를 판단하시는 때는 언제쯤일 것 같습니까?</p><div class="opts">
+    <button class="opt" data-v="3">석 달 안에 판단을 내릴 것 같습니다</button>
+    <button class="opt" data-v="6">여섯 달쯤이면 판단을 내릴 것 같습니다</button>
+    <button class="opt" data-v="12">일 년은 지켜볼 듯 합니다</button>
   </div></div>
 </section>
 
@@ -404,7 +405,7 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
   <p class="axis">축 1</p>
   <h2>업종과 거래 형태</h2>
   <p class="lead">각 문항에서 가장 가까운 것을 하나씩 고르십시오.</p>
-  <div class="q" data-k="sind"><p>어떤 분야에 가장 가깝습니까</p><div class="opts grid grid3">
+  <div class="q" data-k="sind"><p>어떤 업종에 가장 가깝습니까?</p><div class="opts grid grid3">
     <button class="opt" data-v="parts">부품·소재</button>
     <button class="opt" data-v="machine">기계·장비</button>
     <button class="opt" data-v="elec">전기·전자</button>
@@ -420,14 +421,14 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
     <button class="opt" data-v="bizsvc">기업 서비스</button>
     <button class="opt" data-v="etc2">그 밖의 분야</button>
   </div></div>
-  <div class="q" data-k="deal"><p>주된 거래 형태는 무엇입니까</p><div class="opts">
+  <div class="q" data-k="deal"><p>주된 거래 형태는 무엇입니까?</p><div class="opts">
     <button class="opt" data-v="oem">주문받아 만들어 납품합니다<small>OEM, ODM, 임가공, 부품 공급</small></button>
     <button class="opt" data-v="brand">우리 브랜드로 완제품을 팝니다</button>
     <button class="opt" data-v="trade">사다가 되팝니다<small>유통, 도매, 수입</small></button>
     <button class="opt" data-v="svc">용역과 서비스를 제공합니다</button>
     <button class="opt" data-v="work">공사와 시공을 맡습니다</button>
   </div></div>
-  <div class="q" data-k="size"><p>직원은 몇 명입니까</p><div class="opts">
+  <div class="q" data-k="size"><p>직원은 몇 명입니까?</p><div class="opts">
     <button class="opt" data-v="s10">10명 아래</button>
     <button class="opt" data-v="s50">10명에서 50명</button>
     <button class="opt" data-v="s300">50명 넘습니다</button>
@@ -437,8 +438,8 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
 <section class="step" data-track="sme" data-step="12">
   <p class="axis">축 2</p>
   <h2>거래 구조</h2>
-  <p class="lead">새 거래처가 어디에서 오는지에 따라 채널이 정해집니다.</p>
-  <div class="q" data-k="buyer"><p>주 고객은 누구입니까</p><div class="opts">
+  <p class="lead">가장 효과적인 채널을 결정하기 위한 질문입니다.</p>
+  <div class="q" data-k="buyer"><p>주 고객은 누구입니까?</p><div class="opts">
     <button class="opt" data-v="big">대기업과 중견기업</button>
     <button class="opt" data-v="sme2">중소기업</button>
     <button class="opt" data-v="gov">공공기관과 지자체</button>
@@ -453,46 +454,46 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
     <button class="opt" data-v="visit">직접 찾아다니는 영업</button>
     <button class="opt" data-v="agent">대리점과 중개상</button>
   </div></div>
-  <div class="q" data-k="cycle"><p>처음 접촉해서 계약까지 얼마나 걸립니까</p><div class="opts">
+  <div class="q" data-k="cycle"><p>처음 접촉해서 계약까지 얼마나 걸립니까?</p><div class="opts">
     <button class="opt" data-v="fast">한 달 안에 끝납니다</button>
     <button class="opt" data-v="mid2">석 달쯤 걸립니다</button>
     <button class="opt" data-v="long2">반년을 넘깁니다</button>
   </div></div>
-  <div class="q" data-k="amount"><p>건당 거래 금액은 어느 정도입니까</p><div class="opts">
+  <div class="q" data-k="amount"><p>건당 거래 금액은 어느 정도입니까?</p><div class="opts">
     <button class="opt" data-v="a1">천만 원 아래</button>
     <button class="opt" data-v="a2">천만 원에서 1억 원</button>
     <button class="opt" data-v="a3">1억 원 위</button>
   </div></div>
-  <div class="q" data-k="sales"><p>영업은 누가 맡습니까</p><div class="opts">
+  <div class="q" data-k="sales"><p>영업은 누가 맡습니까?</p><div class="opts">
     <button class="opt" data-v="team">영업 담당자가 있습니다</button>
     <button class="opt" data-v="ceo">대표가 직접 뜁니다</button>
-    <button class="opt" data-v="agent2">대리점에 맡깁니다</button>
+    <button class="opt" data-v="agent2">대리점, 총판 등의 유통 전문업체에 맡깁니다</button>
   </div></div>
 </section>
 
 <section class="step" data-track="sme" data-step="13">
   <p class="axis">축 3</p>
   <h2>수출과 공공조달</h2>
-  <p class="lead">이 두 갈래가 열려 있으면 채널 구성이 완전히 달라집니다.</p>
-  <div class="q" data-k="export"><p>수출은 어떤 상태입니까</p><div class="opts">
+  <p class="lead">채널 구성의 확대 필요성을 확인하기 위함입니다.</p>
+  <div class="q" data-k="export"><p>수출은 어떤 상태입니까?</p><div class="opts">
     <button class="opt" data-v="no">하지 않습니다</button>
     <button class="opt" data-v="want">해 보려고 합니다</button>
     <button class="opt" data-v="some">조금씩 하고 있습니다</button>
     <button class="opt" data-v="main">매출의 상당 부분이 수출입니다</button>
   </div></div>
-  <div class="q" data-k="market2" data-multi="1"><p>노리시는 시장을 모두 고르십시오<span class="skip">수출 계획이 해당하는 것이 없으면 비워 두십시오</span></p><div class="opts grid grid3">
+  <div class="q" data-k="market2" data-multi="1"><p>목표시장을 모두 고르십시오<span class="skip">수출 계획이 해당하는 것이 없으면 비워 두십시오</span></p><div class="opts grid grid3">
     <button class="opt" data-v="asia">아시아</button>
     <button class="opt" data-v="us">북미</button>
     <button class="opt" data-v="eu">유럽</button>
     <button class="opt" data-v="mid">중동·아프리카</button>
   </div></div>
-  <div class="q" data-k="g2b"><p>공공조달은 어떤 상태입니까</p><div class="opts">
+  <div class="q" data-k="g2b"><p>공공조달(정부,지자체, 공공기관, 학교 등)은 어떤 상태입니까?</p><div class="opts">
     <button class="opt" data-v="none">해당 없습니다</button>
     <button class="opt" data-v="want2">관심은 있습니다</button>
-    <button class="opt" data-v="reg">등록은 했으나 실적이 없습니다</button>
+    <button class="opt" data-v="reg">조달등록은 했으나 실적이 없습니다</button>
     <button class="opt" data-v="active">납품 실적이 있습니다</button>
   </div></div>
-  <div class="q" data-k="expo"><p>전시회에 나가십니까</p><div class="opts">
+  <div class="q" data-k="expo"><p>고객확대를 위해 국내외 전시회에 나가십니까?</p><div class="opts">
     <button class="opt" data-v="no">나가지 않습니다</button>
     <button class="opt" data-v="dom">국내 전시회에 나갑니다</button>
     <button class="opt" data-v="int">해외 전시회까지 나갑니다</button>
@@ -501,8 +502,8 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
 
 <section class="step" data-track="sme" data-step="14">
   <p class="axis">축 4</p>
-  <h2>목적과 보유 자산</h2>
-  <p class="lead">중소기업 홈페이지는 손님을 끌기 위해서만 만드는 것이 아닙니다.</p>
+  <h2>마케팅 채널 구축목적과 보유 자산 현황</h2>
+  <p class="lead">디지털 채널 구축 목적을 정확히 파악하기 위한 질문입니다.</p>
   <div class="q" data-k="goal" data-multi="1"><p>홈페이지로 이루시려는 것을 모두 고르십시오</p><div class="opts">
     <button class="opt" data-v="newbiz">새 거래처를 찾습니다</button>
     <button class="opt" data-v="exportgoal">해외 바이어에게 보여 줍니다</button>
@@ -534,7 +535,7 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
 <section class="step" data-track="sme" data-step="15">
   <p class="axis">축 5</p>
   <h2>보유한 채널과 자료</h2>
-  <p class="lead">오래된 홈페이지는 없느니만 못할 때가 있습니다.</p>
+  <p class="lead">디지털 채널의 운영현황을 파악하기 위함입니다.</p>
   <div class="q" data-k="shave" data-multi="1"><p>이미 갖추신 것을 모두 고르십시오<span class="skip">해당하는 것이 없으면 비워 두십시오</span></p><div class="opts grid grid3">
     <button class="opt" data-v="corpsite">국문 홈페이지</button>
     <button class="opt" data-v="ensite">영문 홈페이지</button>
@@ -547,7 +548,7 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
     <button class="opt" data-v="d2c">스마트스토어</button>
     <button class="opt" data-v="recruit">채용 페이지</button>
   </div></div>
-  <div class="q" data-k="salive" data-multi="1"><p>그중 최근 1년 안에 손보신 것을 모두 고르십시오<span class="skip">해당하는 것이 없으면 비워 두십시오</span></p><div class="opts grid grid3">
+  <div class="q" data-k="salive" data-multi="1"><p>그중 최근 1년 안에 갱신한 것을 모두 고르십시오<span class="skip">해당하는 것이 없으면 비워 두십시오</span></p><div class="opts grid grid3">
     <button class="opt" data-v="corpsite">국문 홈페이지</button>
     <button class="opt" data-v="ensite">영문 홈페이지</button>
     <button class="opt" data-v="catalog">제품 카탈로그</button>
@@ -557,42 +558,42 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
     <button class="opt" data-v="b2bplat">수출 B2B 플랫폼</button>
     <button class="opt" data-v="d2c">스마트스토어</button>
   </div></div>
-  <div class="q" data-k="sitestate"><p>지금 홈페이지는 어떤 상태입니까</p><div class="opts">
+  <div class="q" data-k="sitestate"><p>지금 홈페이지는 어떤 상태입니까?</p><div class="opts">
     <button class="opt" data-v="new">최근 3년 안에 만들었습니다</button>
     <button class="opt" data-v="old2">5년은 넘었습니다</button>
-    <button class="opt" data-v="broken">휴대폰에서 제대로 보이지 않습니다</button>
+    <button class="opt" data-v="broken">휴대폰에서는 제대로 보이지 않습니다</button>
     <button class="opt" data-v="none3">없습니다</button>
   </div></div>
-  <div class="q" data-k="photo2"><p>제품과 현장 사진은 어떤 상태입니까</p><div class="opts">
+  <div class="q" data-k="photo2"><p>제품과 현장 사진은 어떤 상태입니까?</p><div class="opts">
     <button class="opt" data-v="pro">전문가가 찍은 사진이 있습니다</button>
     <button class="opt" data-v="some2">직접 찍은 사진이 조금 있습니다</button>
-    <button class="opt" data-v="none4">쓸 만한 것이 없습니다</button>
+    <button class="opt" data-v="none4">쓸 만한 것이 거의 없습니다</button>
   </div></div>
 </section>
 
 <section class="step" data-track="sme" data-step="16">
   <p class="axis">축 6</p>
-  <h2>담당 인력과 여력</h2>
-  <p class="lead">중소기업에서 마케팅이 멈추는 이유는 담당자가 다른 일에 밀리기 때문입니다.</p>
-  <div class="q" data-k="mkt"><p>마케팅은 누가 맡습니까</p><div class="opts">
+  <h2>채널 관리 담당 인력과 여력</h2>
+  <p class="lead">디지털 채널 관리의 지속 가능성에 따른 설계를 위한 질문입니다.</p>
+  <div class="q" data-k="mkt"><p>마케팅은 누가 맡습니까?</p><div class="opts">
     <button class="opt" data-v="full">전담 직원이 있습니다</button>
     <button class="opt" data-v="part">다른 일과 겸해서 맡습니다</button>
     <button class="opt" data-v="ceo2">대표가 직접 합니다</button>
     <button class="opt" data-v="agency">대행사에 맡깁니다</button>
     <button class="opt" data-v="none5">맡은 사람이 없습니다</button>
   </div></div>
-  <div class="q" data-k="hours"><p>일주일에 쓸 수 있는 시간은 얼마나 됩니까</p><div class="opts">
+  <div class="q" data-k="hours"><p>디지털 채널관리에 쓸 수 있는 시간은 일주일에 얼마나 됩니까</p><div class="opts">
     <button class="opt" data-v="3">3시간이 채 안 됩니다</button>
     <button class="opt" data-v="6">5시간쯤</button>
     <button class="opt" data-v="12">10시간 넘게</button>
     <button class="opt" data-v="25">전담이라 하루의 절반 이상</button>
   </div></div>
-  <div class="q" data-k="writer"><p>제품과 기술을 글로 설명할 사람이 있습니까</p><div class="opts">
+  <div class="q" data-k="writer"><p>제품과 기술을 글로 설명할 사람이 있습니까?</p><div class="opts">
     <button class="opt" data-v="eng">기술 인력이 써 줄 수 있습니다</button>
     <button class="opt" data-v="ceo3">대표만 설명할 수 있습니다</button>
     <button class="opt" data-v="none6">설명할 사람이 마땅치 않습니다</button>
   </div></div>
-  <div class="q" data-k="shoot2"><p>촬영은 어디까지 가능합니까</p><div class="opts">
+  <div class="q" data-k="shoot2"><p>촬영은 어디까지 가능합니까?</p><div class="opts">
     <button class="opt" data-v="both2">제품도 현장도 찍을 수 있습니다</button>
     <button class="opt" data-v="one">둘 중 하나는 됩니다</button>
     <button class="opt" data-v="hard3">어렵습니다</button>
@@ -601,26 +602,26 @@ ul.chk li{margin-bottom:8px;font-size:14.5px;line-height:1.55}
 
 <section class="step" data-track="sme" data-step="17">
   <p class="axis">축 7</p>
-  <h2>예산과 목표 시점</h2>
-  <p class="lead">중소기업은 지원사업으로 부담을 상당히 덜 수 있습니다.</p>
-  <div class="q" data-k="budget"><p>한 해 마케팅에 쓰실 수 있는 예산은 어느 정도입니까</p><div class="opts">
+  <h2>채널 운영예산과 목표관리</h2>
+  <p class="lead">디지털 마케팅을 위한 비용투입 가능성과 지속성을 확인합니다.</p>
+  <div class="q" data-k="budget"><p>한 해 마케팅에 쓰실 수 있는 예산은 어느 정도입니까?</p><div class="opts">
     <button class="opt" data-v="b1">500만 원이 안 됩니다</button>
     <button class="opt" data-v="b2">1천만 원쯤</button>
     <button class="opt" data-v="b3">3천만 원쯤</button>
     <button class="opt" data-v="b4">그보다 많이 쓸 수 있습니다</button>
   </div></div>
-  <div class="q" data-k="siteb"><p>홈페이지 제작에 들이실 수 있는 예산은 어느 정도입니까</p><div class="opts">
-    <button class="opt" data-v="self">직접 만들어야 합니다</button>
+  <div class="q" data-k="siteb"><p>디지털 채널 구축에 사용할 수 있는 예산은 어느 정도입니까?</p><div class="opts">
+    <button class="opt" data-v="self">전혀없으며, 직접 만들어야 합니다</button>
     <button class="opt" data-v="c300">300만 원까지</button>
     <button class="opt" data-v="c1000">1천만 원까지</button>
     <button class="opt" data-v="c2000">그 이상도 가능합니다</button>
   </div></div>
-  <div class="q" data-k="gov"><p>정부 지원사업을 활용하고 계십니까</p><div class="opts">
+  <div class="q" data-k="gov"><p>어떤 형태의 것이든지 간에 정부 지원사업을 활용하고 계십니까?</p><div class="opts">
     <button class="opt" data-v="using">이미 활용하고 있습니다</button>
     <button class="opt" data-v="want3">알아보고 싶습니다</button>
     <button class="opt" data-v="no7">생각 없습니다</button>
   </div></div>
-  <div class="q" data-k="term"><p>언제까지 성과를 보셔야 합니까</p><div class="opts">
+  <div class="q" data-k="term"><p>디지털 채널에 비용을 쓰신다면 언제까지 성과를 보셔야 합니까?</p><div class="opts">
     <button class="opt" data-v="6">반년 안에</button>
     <button class="opt" data-v="12">일 년쯤</button>
     <button class="opt" data-v="24">이 년은 봅니다</button>
